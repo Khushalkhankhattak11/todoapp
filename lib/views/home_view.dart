@@ -22,10 +22,12 @@ class _HomeViewState extends State<HomeView> {
                 child: Center(
                   child: Column(
                     children: [
+
+                      SizedBox(height: 70),
                       Text(
                         "October 7, 2023",
                         style: TextStyle(
-                          fontSize: 22,
+                          fontSize: 18,
                           color: Colors.white,
                         ),
                       ),
@@ -62,8 +64,8 @@ class _HomeViewState extends State<HomeView> {
                       child: ListView.builder(
                           physics: AlwaysScrollableScrollPhysics(),
                           shrinkWrap: true,
-                          padding: EdgeInsets.zero,
-                          itemCount: 12,
+                          padding: EdgeInsets.all(10),
+                          itemCount: 120,
                           itemBuilder: (context, index) {
                             return Text('kkk');
                           }),
@@ -78,10 +80,10 @@ class _HomeViewState extends State<HomeView> {
                           borderRadius: BorderRadius.circular(10),
                           color: Color.fromARGB(255, 140, 119, 141)),
                       child: ListView.builder(
-                          physics: NeverScrollableScrollPhysics(),
+                          scrollDirection: Axis.vertical,
                           shrinkWrap: true,
-                          padding: EdgeInsets.zero,
-                          itemCount: 12,
+                          padding: EdgeInsets.all(10),
+                          itemCount: 112,
                           itemBuilder: (context, index) {
                             return Text('kkk');
                           }),
